@@ -8,14 +8,25 @@
   <title>Portfolio | Patrick Benham - Freelance Web Developer</title>
   <!--<link rel="icon" href="favicon.ico">-->
   <link href="main.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" 
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-</head>
+    rel="stylesheet">
+
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#1e7087">
+  <link rel="shortcut icon" href="favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-config" content="favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicons -->
+
+ </head>
 
 
 <body>
@@ -25,17 +36,25 @@
 
   <section class="cover flex">
 
-    <h1 class="main-header">Hello, I'm <mark class="hl">Patrick Benham</mark>.<br>I'm a freelance web developer.</h1>
+    <h1 class="main-header">Hello, I'm <b class="hl">Patrick Benham</b>.<br>I'm a freelance web developer.</h1>
 
-  <div class="btn"><a class="btn__link" href="#about">View my work
-      <i class="micon micon-go"></i>
+    <a href="#about" class="btn btn--go">
+      <span class="btn__link">View my work</span>
+      <i class="micon micon--go"></i>
     </a>
-  </div>
 
   </section>
 
 
-<nav class="navbar flex flex--row" id="stickybar">
+<nav class="navbar flex flex--row" id="navbar">
+
+  <div class="hamburger-menu">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <span class="scrolled-section">Currently scrolled section title (using JS)</span>
 
   <a class="navbar__link flex--row" href="#about">About</a>
   <a class="navbar__link flex--row" href="#portfolio">Portfolio</a>
@@ -48,119 +67,287 @@
 </header>
 
 
-
 <main>
 
-  <section id="about">
+  <section id="about" class="section--a" aria-labelledby="about-header">
 
-  <h2>About</h2>
-  <hr>
 
-  <p>Full-stack developer, graduate of Computer Science....</p>
+  <div class="flex header">
+    <h2 id="about-header" class="header__text">About</h2>
+    <div class="header__underline"></div>
+  </div>
 
-  <figure class="skills">
-    <ul class="skills">
-      <li>Responsive HTML/CSS</li>
-      <li>Javascript</li>
-      <li>React</li>
-      <li>NodeJS</li>
-      <li>Express</li>
-      <li>MongoDB</li>
-      <li>Visual Design?</li>
-      <li>Search Engine Optimization</li>
-      <li>Frameworks? Reactstrap, MaterialUI...</li>
 
-    </ul>
+  <section class="summary">
+
+  <div class="profile-pic"><img src="img/profile.jpg" alt="profile picture"></div>
+  <p>I'm a prospective full-stack web developer and a graduate of Computer Science. I've dedicated myself full-time to learning everything I can to become an exceptional developer, and I'm loving it.</p>
+
+  </section>
+
+
+  <section class="skill-set">
+
+  <h3 id="skillset-header" class="sub-header">Here's my current skill-set:</h3>
+
+  <ul class="skills" aria-labelledby="skillset-header">
+    <li>Responsive HTML and CSS 
+    <span class="visually-hidden">70%</span>
+
+    <div class="prog-bar my1">
+      <div class="prog-bar__1"></div>
+      <div class="prog-bar__2"></div>
+      <div class="prog-bar__3"></div>
+      <div class="prog-bar__4"></div>
+      <div class="prog-bar__5"></div>
+      <div class="prog-bar__6"></div>
+      <div class="prog-bar__7"></div>
+      <div class="prog-bar__empty"></div>
+    </div>
+
+    </li>
+
+    <li>Javascript
+    <span class="visually-hidden">50%</span>
+
+    <div class="prog-bar my1">
+      <div class="prog-bar__1"></div>
+      <div class="prog-bar__2"></div>
+      <div class="prog-bar__3"></div>
+      <div class="prog-bar__4"></div>
+      <div class="prog-bar__5"></div>
+      <div class="prog-bar__empty"></div>
+    </div>
+
+    </li>
+
+    </li>
+
+    <li>React
+    <span class="visually-hidden">10%</span>
+
+    <div class="prog-bar my1">
+      <div class="prog-bar__1"></div>
+      <div class="prog-bar__empty"></div>
+    </div>
+
+    </li>
+
+    <li>NodeJS
+    <span class="visually-hidden">10%</span>
+
+    <div class="prog-bar my1">
+      <div class="prog-bar__1"></div>
+      <div class="prog-bar__empty"></div>
+    </div>
+
+    </li>
+
+    <li>Express
+    <span class="visually-hidden">10%</span>
+
+    <div class="prog-bar my1">
+      <div class="prog-bar__1"></div>
+      <div class="prog-bar__empty"></div>
+    </div>
+
+    </li>
+
+    <li>MongoDB
+    <span class="visually-hidden">10%</span>
+
+    <div class="prog-bar my1">
+      <div class="prog-bar__1"></div>
+      <div class="prog-bar__empty"></div>
+    </div>
+
+    </li>
+
+    <li>Visual Design
+    <span class="visually-hidden">30%</span>
+
+    <div class="prog-bar my1">
+      <div class="prog-bar__1"></div>
+      <div class="prog-bar__2"></div>
+      <div class="prog-bar__3"></div>
+      <div class="prog-bar__empty"></div>
+    </div>
+
+    </li>
+
+    <li>Web Animation
+    <span class="visually-hidden">30%</span>
+
+    <div class="prog-bar my1">
+      <div class="prog-bar__1"></div>
+      <div class="prog-bar__2"></div>
+      <div class="prog-bar__3"></div>
+      <div class="prog-bar__empty"></div>
+    </div>
+
+    </li>
+
+    <li>Search Engine Optimization
+    <span class="visually-hidden">40%</span>
+
+    <div class="prog-bar my1">
+      <div class="prog-bar__1"></div>
+      <div class="prog-bar__2"></div>
+      <div class="prog-bar__3"></div>
+      <div class="prog-bar__4"></div>
+      <div class="prog-bar__empty"></div>
+    </div>
     
-  </figure>
+    </li>
 
-  <p>Performance/optimized, cross-browser tested</p>
+    <li>Full-stack Performance
+    <span class="visually-hidden">30%</span>
+
+    <div class="prog-bar my1">
+      <div class="prog-bar__1"></div>
+      <div class="prog-bar__2"></div>
+      <div class="prog-bar__3"></div>
+      <div class="prog-bar__empty"></div>
+    </div>
+
+    </li>
+
+    <li>Accessibility
+    <span class="visually-hidden">60%</span>
+
+    <div class="prog-bar my1">
+      <div class="prog-bar__1"></div>
+      <div class="prog-bar__2"></div>
+      <div class="prog-bar__3"></div>
+      <div class="prog-bar__4"></div>
+      <div class="prog-bar__5"></div>
+      <div class="prog-bar__6"></div>
+      <div class="prog-bar__empty"></div>
+    </div>
+
+    </li>
+
+  </ul>
+  
+  </section>
+
 
   </section>
 
-  <section id="portfolio">
 
-  <h2>Portfolio</h2>
-  <hr>
+  <section id="portfolio" class="section--b" aria-labelledby="portfolio-header">
 
-  </section>
-
-  <section id="articles">
-
-  <h2>Articles</h2>
-  <hr>
-
-  </section>
-
-  <section id="contact">
-
-  <h2>Contact</h2>
-  <hr>
-
-  <p>Contact form here (name, email, website (optional), message)</p>
+  <div class="flex header">
+    <h2 id="portfolio-header" class="header__text">Portfolio</h2>
+    <div class="header__underline header__underline--light"></div>
+  </div>
 
   </section>
 
 
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
-  <p>one two three...one two three...one two three...one two three...</p>
+  <section id="articles" class="section--c" aria-labelledby="articles-header">
+
+  <div class="flex header">
+    <h2 id="articles-header" class="header__text">Articles</h2>
+    <div class="header__underline"></div>
+  </div>
+
+  </section>
 
 
+  <section id="contact" class="section--d" aria-labelledby="contact-header">
 
+
+  <div class="flex header">
+    <h2 id="contact-header" class="header__text">Contact</h2>
+    <div class="header__underline"></div>
+  </div>
+
+
+  <p id="contact-desc" class="ta-c">Have a question? Want to work together?</p>
+
+  <form class="contact-form" action="/form-handler" method="post" aria-describedby="contact-desc">
+
+
+    <fieldset>
+    <legend class="visually-hidden">Contact form</legend>
+
+    <div>
+      <label for="name" class="visually-hidden">Your name:</label>
+      <input class="contact-form__txt-i" type="text" id="name" name="user_name" placeholder="Your name" required>
+    </div>
+
+    <div>
+      <label for="mail" class="visually-hidden">Your email:</label>
+      <input class="contact-form__txt-i" id="mail" type="email" name="user_email" placeholder="Your email" required>
+    </div>
+
+    <div>
+      <label for="msg" class="visually-hidden">Message:</label>
+      <textarea class="contact-form__txt-i" id="msg" name="user_message" cols="30" rows="10" placeholder="Message"></textarea>
+    </div>
+
+    <div class="ta-r">
+      <input type="submit" class="btn btn--em" value="Submit">
+    </div>
+
+    </fieldset>
+
+
+  </form>
+
+
+  </section>
 
 
 </main>
 
 
-<footer>
+<footer class="section--e">
 
-  <a href="">LinkedIn</a>
-  <a href="https://github.com/patbenham">GitHub</a>
-  <a href="https://codepen.io/pbenham/">CodePen</a>
 
-  <p>&copy;2019 copyright info</p>
+  <div class="flex flex--row mb-3">
+
+  <div class="flex row-spaced">
+
+    <a href="">
+      <img class="small-icon" src="img/icons/linkedin.svg" alt="my LinkedIn profile">
+    </a>
+
+  </div>
+
+
+  <div class="flex row-spaced">
+
+    <a href="https://github.com/patbenham">
+      <img class="small-icon" src="img/icons/github.svg" alt="my GitHub profile">
+    </a>
+
+  </div>
+
+
+  <div class="flex row-spaced">
+
+    <!-- <a href="">
+      <img class="small-icon" src="img/icons/codepen.svg" alt="my CodePen profile"> 
+    </a>
+    -->
+
+    <svg class="svg-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CodePen icon</title><path d="M24 8.182l-.018-.087-.017-.05c-.01-.024-.018-.05-.03-.075-.003-.018-.015-.034-.02-.05l-.035-.067-.03-.05-.044-.06-.046-.045-.06-.045-.046-.03-.06-.044-.044-.04-.015-.02L12.58.19c-.347-.232-.796-.232-1.142 0L.453 7.502l-.015.015-.044.035-.06.05-.038.04-.05.056-.037.045-.05.06c-.02.017-.03.03-.03.046l-.05.06-.02.06c-.02.01-.02.04-.03.07l-.01.05C0 8.12 0 8.15 0 8.18v7.497c0 .044.003.09.01.135l.01.046c.005.03.01.06.02.086l.015.05c.01.027.016.053.027.075l.022.05c0 .01.015.04.03.06l.03.04c.015.01.03.04.045.06l.03.04.04.04c.01.013.01.03.03.03l.06.042.04.03.01.014 10.97 7.33c.164.12.375.163.57.163s.39-.06.57-.18l10.99-7.28.014-.01.046-.037.06-.043.048-.036.052-.058.033-.045.04-.06.03-.05.03-.07.016-.052.03-.077.015-.045.03-.08v-7.5c0-.05 0-.095-.016-.14l-.014-.045.044.003zm-11.99 6.28l-3.65-2.44 3.65-2.442 3.65 2.44-3.65 2.44zm-1.034-6.674l-4.473 2.99L2.89 8.362l8.086-5.39V7.79zm-6.33 4.233l-2.582 1.73V10.3l2.582 1.726zm1.857 1.25l4.473 2.99v4.82L2.89 15.69l3.618-2.417v-.004zm6.537 2.99l4.474-2.98 3.613 2.42-8.087 5.39v-4.82zm6.33-4.23l2.583-1.72v3.456l-2.583-1.73zm-1.855-1.24L13.042 7.8V2.97l8.085 5.39-3.612 2.415v.003z"/></svg>
+
+  </div>
+
+
+  </div>
+
+
+  <span class="flex flex--row">&copy;2019 copyright info</span>
 
 
 </footer>
 
 </body>
 
-  <script src="stickynav.js"></script>
+<script src="stickynav.js"></script>
+
 </html>
